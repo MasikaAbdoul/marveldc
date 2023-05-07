@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #2d2942;
+  color: #ffff;
+  position: relative;
+}
+
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9pt;
+    color: #625a8f;
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    height: 100vh;
+  }
+
+h3 {
+  width: 100%;
+}
+
+.search {
+  margin: 20px;
+  
+  position: fixed;
+}
+
+#search {
+  padding: 10px 20px;
+  outline: 0.5px solid #625a8f;
+  background-color: #625a8f;
+  border-style: none;
+  color: #ffff;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+
+.image-poster {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.caption{
+    font-size: 10pt;
+}
+
+#box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  border: 1px solid #2d2942;
+}
+
+#movie-box {
+  margin: 10px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 80px!important;
+        padding-bottom: 10px;
+    }
+    #box{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+        overflow: hidden;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        max-height: 80vh;
+    }
+
+    .image-poster{
+        width: 100%;
+    }
+
+    .result-container{
+        border-top: 1px solid #625a8f;
+        border-bottom: 1px solid #625a8f;
+        padding: 10px 0;
+    }
+}
