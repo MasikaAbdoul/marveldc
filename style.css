@@ -52,6 +52,7 @@ h3 {
   color: #ffff;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
+  border-radius: 8px;
 }
 
 #search::placeholder{
