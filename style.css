@@ -54,6 +54,10 @@ h3 {
   letter-spacing: 1px;
 }
 
+#search::placeholder{
+    color: #2d2942a2;
+}
+
 
 .image-poster {
   background-size: cover;
